@@ -20,22 +20,30 @@ header{
     /* global 94%+ browsers support */
     background: linear-gradient(154deg, rgba(18, 0, 6, 1) 22%, rgba(57, 104, 70, 1) 48%, rgba(83, 118, 64, 1) 70%, rgba(109, 133, 58, 1) 86%);
     
-    height:500px;
+    height:200px;
     width:100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-}
-
-.logo{
-    border: 2px white solid;
+    align-items: flex-end;
+    padding: 1.5rem;
 }
 
 .navBarLinks,
 .socialMedia,
-.LoginSignUp{
+.logSign{
     display: flex;
     flex-direction: row;
+}
+
+.socialMedia{
+    justify-content: space-between;
+}
+
+
+.navBarLinks>li{
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 li{
@@ -48,4 +56,11 @@ li>a{
     text-decoration: none;
     font-size: 1.5rem;
     color: white;
+}
+nav{
+    /* border: 2px solid black; */
+}
+.socialMedLogSing{
+    display: flex;
+    flex-direction: column;
 }
