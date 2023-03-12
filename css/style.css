@@ -1,3 +1,10 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    border:0;
+    font-size:16px;
+}
+
 header{
     
     /* ff 3.6+ */
@@ -17,11 +24,28 @@ header{
     width:100vw;
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .logo{
-     /* background: url("../assets/LogoWNameG.png") no-repeat; */
-    width:fit-content;
-    height: fit-content; 
     border: 2px white solid;
+}
+
+.navBarLinks,
+.socialMedia,
+.LoginSignUp{
+    display: flex;
+    flex-direction: row;
+}
+
+li{
+    
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+li>a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
 }
