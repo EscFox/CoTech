@@ -1,28 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
 
-:root{
-    --pri_green:#537640;
-    --sec_green:#396846;
-    --bl_color: #120006;
-    --wh_color:#FFFFFF;
-}
-
-*{
-    box-sizing: border-box;
-    padding:0;
-    margin:0;
-    font-size:14px;
-}
-
-body{
-    font-family: sans-serif;
-}
 
 nav{
     /* background: #222; */
     background:linear-gradient(150deg, rgba(0, 0, 0, 1) 15%, #396846 42%, #537640 68%, rgba(123,156,51, 1) 100%);
     padding: 5px 20px;
+    width:100vw;
 }
 
 ul{
@@ -30,12 +12,23 @@ ul{
 }
 
 a{
+    /* color: var(--wh_color);
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+    font-weight: 100;
+    text-decoration: none; */
+}
+
+.menu li a{
+    display: block;
+
     color: var(--wh_color);
     font-family: 'Montserrat', sans-serif;
     font-size:1.5rem;
     font-weight: 100;
     text-decoration: none;
 }
+
 a:hover{
     /* text-decoration: underline; original*/ 
     font-weight: 300;
@@ -44,9 +37,7 @@ a:hover{
 .menu li{    
     padding:15px 5px;
 }
-.menu li a{
-    display: block;
-}
+
 
 .logo a{
     /* font-size:20px;  */
@@ -159,16 +150,18 @@ a:hover{
         transition:all .25s;
     }
     .button:not(.secondary) a:hover{
-        background:#006d6d;
-        border-color:#005959;
+        background:var(--sec_green);
+        border-color:var(--bl_color);
     }
     .button.secondary a:hover{
-        color:#005959;
+        background:var(--wh_color);
+        border-color:var(--bl_color);
+        color:var(--pri_green);
     }
 }
 
 /* @media all and (min-width: 768px){  original */
-@media all and (min-width: 950px){
+@media all and (min-width: 970px){
     
     .item{
         display:block;
@@ -195,8 +188,8 @@ a:hover{
         padding-right:0;
     }
 }
-@media all and (max-width: 950px){
+@media all and (max-width: 970px){
     #logo_img_txt{
-        content: url("./assets/LogoTrentiImgOnly.png");    
+        content: url("../assets/LogoTrentiImgOnly.png");    
     }
 }

@@ -1,0 +1,44 @@
+.main_section{
+    width:100vw;
+    height:80vh;
+    background: url(../assets/ManchesterSalford_opacitiy50per.png) no-repeat;
+    display: flex;
+    justify-content: center;
+
+}
+#whyusSec{
+    padding:15px;
+}
+#whyusSec>h1{
+    font-size: 3rem;
+    border-bottom: black solid 5px;
+}
+
+
+/*BEGGINING LATESTnEWS  */
+#latestNews{
+    display: none;
+    width:20vw;
+    height:50vh;
+    border: black solid 5px;
+    padding:10px;
+    overflow:hidden scroll;
+}
+
+#latestNews>a>div{
+    
+
+}
+
+
+/* END LATESTnEWS  */
+
+/*BEGGINING REVIEWS  */
+
+#reviewsSec>div>img{
+    width:150px;
+    height:150px;
+}
+/*END REVIEWS  */
+
+

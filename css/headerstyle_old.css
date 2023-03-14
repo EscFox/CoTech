@@ -1,0 +1,176 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    border:0;
+    font-size:14px;
+}
+
+body{
+    /* background: url('../assets/ManchesterSalford1.jpg');
+    background-size:100% 100%;
+    background-repeat:no-repeat; */
+}
+
+header{
+    background:linear-gradient(150deg, rgba(0, 0, 0, 1) 15%, rgba(57, 104, 70, 1) 42%, rgba(83, 118, 64, 1) 68%, rgba(123,156,51, 1) 100%);
+    
+    height:25vh;
+    width:100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.navBarLinks,
+.logoAndHambmenu,
+.socialMedia,
+.logSign{
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMedia>li>a>img:hover{
+    scale: 1.5;
+}
+
+.socialMedia{
+    justify-content: space-between;
+}
+
+
+
+.navBarLinks>li{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+li{
+    
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+li>a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+li>a:hover{
+    font-weight: 200;
+    
+}
+
+
+#hambMenu{
+    /* width:1.5rem; */
+    width: 2rem;
+    height: 2rem;
+}
+
+.hambMenu{
+    align-self: center;
+}
+
+header,nav{
+    /* border: 2px solid black; */
+    
+}
+.socialMedLogSing{
+    display: flex;
+    flex-direction: column;
+}
+
+
+#emailIcon,
+#LinkedinIcon,
+#twitterIcon{
+    opacity: 0.6;
+}
+
+.logSign>li:not(:first-child){
+    border-left:1px solid black
+}
+
+@media (min-width:1250px) {
+    .socialMedia>li>a>img{
+        display:block;
+    }
+    .hambMenu{
+        display: none;
+    }
+
+}
+
+
+@media (max-width:1250px) { 
+    *{
+        font-size:12px;
+    }
+    .socialMedia>li>a>img{
+        scale: 0.8;
+    }
+    .hambMenu{
+        display: none;
+    }
+}
+
+@media (max-width:990px) { 
+    #logo_img_txt{
+        content: url("../assets/LogoTrentiImgOnly.png");    
+    }
+    
+    header{
+        height:11vh;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items:center;
+        padding: 1.5rem;
+    }
+    .logoAndHambmenu{
+        width: 100vw;
+        justify-content: space-between;
+        padding-bottom: 2vh;
+    }    
+    .logo{
+        padding-left:2vw;
+    }
+    .hambMenu{
+        padding-right:2vw;
+        display:block;
+        align-self: center;
+    }
+    
+
+    .navBarLinks{
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+    }
+    .navBarLinks,
+    .socialMedLogSing{
+        display:none;
+    }
+
+    .navBarLinks>li:not(:first-child){
+        border-top:1px solid black;
+    }
+}
+/* HEADER END  */
+
+
+
+main{
+    width: 100vw;
+    height: 50vh;
+}
+
+footer{
+    width:100vw;
+    height:25vh;
+}
