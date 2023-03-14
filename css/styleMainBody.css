@@ -122,13 +122,78 @@
 
 /*BEGGINING REVIEWS  */
 
-#reviewsSec>div>img{
-    width:150px;
-    height:150px;
+
+#reviewsSec{
+    padding:100px;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
+
+#reviewsSec>div{
+    border:2px solid black;
+    background-color: var(--ter_green);
+    /* background-color: var(--sec_green); */
+    /* background-color: var(--pri_green); */
+    width:250px;
+    text-align: center;
+    border-radius: 3%;
+    box-shadow: 5px 5px;
+}
+
+
+/* #reviewsSec>div>img{ */
+.custPics{
+    padding:20px;
+    width:175px;
+    height:175px;
+    border-radius:50%;
+    
+}
+
+.custPics:hover{
+    scale:1.1;
+}
+
+.reviews>h2{
+    margin:20px 0px;
+    font-size:1.2rem;
+    font-weight: 400;
+}
+
+.reviews>.ratingStars{
+    margin:20px 0px;
+}
+
+.reviews>p{
+    margin:5px 20px;
+    text-align: left;
+    font-size: 1.1rem;
+}
+
+.stars{
+    width:25px;
+    height:25px;
+}
+
+
+#reviewsSec>div:not(:first-child){}
+
 /*END REVIEWS  */
 
 
+
+
+
+
+
+
+
+
+
+
+
+/* BEGINNING MEIDA QUERY  */
 
 @media all and (max-width:1550px){
 
@@ -173,14 +238,4 @@
     } 
 }
 
-/* #whyusSec>h1{
-    font-size: 3.5rem;
-}
-
-#whyusSec>ul>li{
-    font-size: 2rem;
-}
-
-#whyusSec>h3{
-    font-size: 1.5rem;
-} */
+/* END MEIDA QUERY  */
