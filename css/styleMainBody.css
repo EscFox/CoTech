@@ -3,33 +3,120 @@
     height:80vh;
     background: url(../assets/ManchesterSalford_opacitiy50per.png) no-repeat;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
 
 }
+
+/*BEGGINING WHY US  */
 #whyusSec{
-    padding:15px;
+    background-color: var(--sec_green);
+    padding:50px;
+    padding-left:100px;
+    align-self: center;
+    width: 50%;
+    /* border: 2px black solid; */
+    
 }
+
 #whyusSec>h1{
     font-size: 3rem;
-    border-bottom: black solid 5px;
+    color: var(--wh_color);
+    border-bottom: black solid 10px;
+    text-align: justify;
 }
 
+
+#whyusSec>h3{
+    font-size: 2rem;
+    padding-top: 5px;
+    text-align: justify;
+}
+
+
+
+#whyusSec>ul>li{
+    padding-top:10px;
+    font-size: 1.5rem;
+    font-weight: 200;
+    color: var(--wh_color);
+    text-align: justify;
+    list-style: none;
+}
+
+#whyusSec>ul>li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: var(--wh_color); /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+
+/*END WHY US  */
 
 /*BEGGINING LATESTnEWS  */
 #latestNews{
-    display: none;
+    /* background-color: var(--ter_green); */
     width:20vw;
     height:50vh;
-    border: black solid 5px;
+    /* border: black solid 5px; */
     padding:10px;
+    padding-right:20px;
+    
+    align-self: flex-start;
+    height: 75%;
+    align-self: center;
+}
+
+#latestNews>div{
+    height:50%;
     overflow:hidden scroll;
 }
 
-#latestNews>a>div{
-    
-
+#latestNews>div::-webkit-scrollbar {
+    width: 11px;
+}
+#latestNews>div {
+    scrollbar-width: thin;
+    scrollbar-color: var(--sec_green) var(--bl_color);
+}
+#latestNews>div::-webkit-scrollbar-track {
+    background: var(--bl_color);
+  }
+#latestNews>div::-webkit-scrollbar-thumb {
+    background-color: var(--sec_green) ;
+    border-radius: 6px;
+    border: 3px solid var(--bl_color);
 }
 
+
+
+#latestNews>div>h2{
+    font-size: 1.3rem;
+    color: var(--wh_color);
+    font-weight: 400;
+}
+
+#latestNews>div>a>*{
+    text-align: justify;
+}
+
+#latestNews>div>a{
+    text-decoration: none;
+}
+#latestNews>div>a>h3{
+    color: var(--pri_green);
+}
+#latestNews>div>a>p{
+    color: var(--bl_color);
+}
+
+
+#corpNews{
+    padding-bottom: 5px;
+    border-bottom: 2px solid var(--bl_color);
+}
 
 /* END LATESTnEWS  */
 
@@ -42,3 +129,58 @@
 /*END REVIEWS  */
 
 
+
+@media all and (max-width:1550px){
+
+    #whyusSec>h1{
+        font-size: 2.5rem;
+    }
+    
+    #whyusSec>ul>li{
+        font-size: 1.2rem;
+    }
+    
+    #whyusSec>h3{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media all and (max-width:1200px){
+    #whyusSec{
+        width: 100%;
+    }
+    #latestNews{
+        display: none;
+    } 
+    #whyusSec>h1{
+        font-size: 2rem;
+    }
+
+    #whyusSec>h3{
+        font-size: 1.5rem;
+    }
+    
+    #whyusSec>ul>li{
+        font-size: 1rem;
+    }
+    
+
+}
+@media all and (max-width:500px){
+    #whyusSec>h3{
+        display: none;
+    } 
+}
+
+/* #whyusSec>h1{
+    font-size: 3.5rem;
+}
+
+#whyusSec>ul>li{
+    font-size: 2rem;
+}
+
+#whyusSec>h3{
+    font-size: 1.5rem;
+} */

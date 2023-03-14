@@ -7,7 +7,7 @@ nav{
     width:100vw;
 }
 
-ul{
+nav>ul{
     list-style-type: none;
 }
 
