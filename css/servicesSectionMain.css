@@ -1,0 +1,94 @@
+.services_section{
+    width:100vw;
+    height:100vh;
+    /* background: url(../assets/ManchesterSalford_opacitiy50per.png) no-repeat; */
+    background: url(../assets/ManchesterSalford2_Opacity50per-min.png) no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.services>div{
+    text-align: center;
+    width:75%;
+    height:75%;
+    border: 2px solid var(--bl_color); 
+    border-radius: 5px;
+    background-color: var(--wh_color);
+    padding:20px;
+    margin: 1.5rem;
+}
+
+.services>div:not(:first-child){
+    padding-top:40px;
+    /* padding-left:40px; */
+}
+
+.services>div>h1{
+    font-size: 1.5rem;
+    font-weight: 300;
+    padding-bottom:50px;
+}
+.services>div>img{
+    width:50%;
+    height:40%;
+}
+
+
+
+@media all and (max-width:1070px){
+    .services>div{
+        width:50%;
+        height:50%;
+    }
+    .services>img{
+        /* display: none; */
+        width:50%;
+        height:50%;
+    }
+    .services>div>img{
+        /* display: none; */
+        width:50%;
+        height:50%;
+    }
+}
+
+@media all and (max-width:1020px){
+    .services>div{
+        width:50%;
+        height:50%;
+        padding:5px;
+        margin:0.5rem;
+    }
+    .services>img{
+        display: none;
+        
+    }
+    .services>div>img{
+        width:50px;
+        height:50px;
+        /* display: none; */
+    }
+}
+
+@media all and (max-width:800px){
+    .services>div{
+        width:90vw;
+        height:20%;
+    }
+    .services>img{
+        display: none;
+        
+    }
+    .services>div>img{
+        /* display: none; */
+        width:50px;
+        height:50px;
+    }
+    .services>div>h1{
+        font-size: 1rem;
+        font-weight: 300;
+        padding-bottom:20px;
+    }
+}
