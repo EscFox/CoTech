@@ -1,0 +1,202 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Ubuntu:ital,wght@0,300;1,300&display=swap');
+
+:root{
+    --pri_green:#537640;
+    --sec_green:#396846;
+    --bl_color: #120006;
+    --wh_color:#FFFFFF;
+}
+
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+    font-size:14px;
+}
+
+body{
+    font-family: sans-serif;
+}
+
+nav{
+    /* background: #222; */
+    background:linear-gradient(150deg, rgba(0, 0, 0, 1) 15%, #396846 42%, #537640 68%, rgba(123,156,51, 1) 100%);
+    padding: 5px 20px;
+}
+
+ul{
+    list-style-type: none;
+}
+
+a{
+    color: var(--wh_color);
+    font-family: 'Montserrat', sans-serif;
+    font-size:1.5rem;
+    font-weight: 100;
+    text-decoration: none;
+}
+a:hover{
+    /* text-decoration: underline; original*/ 
+    font-weight: 300;
+}
+
+.menu li{    
+    padding:15px 5px;
+}
+.menu li a{
+    display: block;
+}
+
+.logo a{
+    /* font-size:20px;  */
+}
+
+.button.secondary{
+    border-bottom:1px black solid;
+}
+
+/* Mobile Menu */
+.menu{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    align-items:center;
+}
+
+.toggle{
+    order:1;
+}
+.item.button{
+    order:2;
+}
+
+.item{
+    width:100%;
+    text-align:center;
+    order:3;
+    display:none;
+}
+
+.item.active{
+    display:block;
+}
+
+.toggle{
+    cursor:pointer;
+}
+
+/* my hamburguer menu */
+/* .barsImg{
+    width:1.8rem;
+    height:1.8rem;
+} */
+/*  */
+
+/* video hambuerguer menu */
+.bars{
+    background:var(--bl_color);
+    display:inline-block;
+    height:2px;
+    position:relative;
+    width: 18px;
+}
+
+.bars::before,
+.bars::after{
+    background:var(--bl_color);
+    content:"";
+    display:inline-block;
+    height:2px;
+    position:absolute;
+    width: 18px;
+}
+
+.bars::before{
+    top:5px;
+}
+
+.bars::after{
+    top:-5px;
+}
+
+/* TABLET MENU */
+
+
+@media all and (min-width:500px){
+
+    .menu{
+        justify-content: center;
+    }
+    .logo{
+        flex-grow:1;
+    }
+    .item.button{
+        width: auto;
+        order:1;
+        display: block;
+    }
+    .toggle{
+        order:2;
+    }
+    .button.secondary{
+        border:0;
+    }
+    .button a{
+        text-decoration:none;
+        padding:7px 15px;
+        /* background:teal; */
+        background:var(--bl_color);
+        border:1px solid var(--wh_color);
+        border-radius:50em;
+        font-size: 1.2rem;
+        font-weight: 300;
+    }
+    .button.secondary a{
+        background:transparent;
+    }
+    .button a:hover{
+        transition:all .25s;
+    }
+    .button:not(.secondary) a:hover{
+        background:#006d6d;
+        border-color:#005959;
+    }
+    .button.secondary a:hover{
+        color:#005959;
+    }
+}
+
+/* @media all and (min-width: 768px){  original */
+@media all and (min-width: 950px){
+    
+    .item{
+        display:block;
+        width:auto;
+    }
+
+    .toggle{
+        display:none;
+    }
+    .logo{
+        order:0;
+    }
+    .item{
+        order:1;
+    }
+    .button{
+        order:2;
+    }
+
+    .menu li{
+        padding:15px 10px;
+    }
+    .menu li.button{
+        padding-right:0;
+    }
+}
+@media all and (max-width: 950px){
+    #logo_img_txt{
+        content: url("./assets/LogoTrentiImgOnly.png");    
+    }
+}
