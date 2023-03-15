@@ -1,0 +1,91 @@
+*{
+    /* box-sizing:border-box;
+    margin:0;
+    border:0;
+    font-size:16px; */
+}
+
+header{
+    
+    /* ff 3.6+ */
+    /* background:-moz-linear-gradient(154deg, rgba(18, 0, 6, 1) 22%, rgba(57, 104, 70, 1) 48%, rgba(83, 118, 64, 1) 70%, rgba(109, 133, 58, 1) 86%); */
+    /* safari 5.1+,chrome 10+ */
+    /* background:-webkit-linear-gradient(154deg, rgba(18, 0, 6, 1) 22%, rgba(57, 104, 70, 1) 48%, rgba(83, 118, 64, 1) 70%, rgba(109, 133, 58, 1) 86%); */
+    /* opera 11.10+ */
+    /* background:-o-linear-gradient(154deg, rgba(18, 0, 6, 1) 22%, rgba(57, 104, 70, 1) 48%, rgba(83, 118, 64, 1) 70%, rgba(109, 133, 58, 1) 86%); */
+    /* ie 6-9 */
+    /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#6D853A', endColorstr='#120006', GradientType=1 ); */
+    /* ie 10+ */
+    /* background:-ms-linear-gradient(154deg, rgba(18, 0, 6, 1) 22%, rgba(57, 104, 70, 1) 48%, rgba(83, 118, 64, 1) 70%, rgba(109, 133, 58, 1) 86%); */
+    /* global 94%+ browsers support */
+    background: linear-gradient(154deg, rgba(18, 0, 6, 1) 22%, rgba(57, 104, 70, 1) 48%, rgba(83, 118, 64, 1) 70%, rgba(109, 133, 58, 1) 86%);
+    
+    height:200px;
+    width:100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1.5rem;
+}
+
+.navBarLinks,
+.socialMedia,
+.logSign{
+    display: flex;
+    flex-direction: row;
+}
+
+.socialMedia>li>a>img:hover{
+    scale: 1.5;
+}
+
+.socialMedia{
+    justify-content: space-between;
+}
+
+
+
+.navBarLinks>li{
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+li{
+    
+    text-decoration: none;
+    list-style: none;
+    padding: 5px;
+}
+li>a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    color: white;
+}
+
+li>a:hover{
+    font-weight: 200;
+}
+
+nav{
+    /* border: 2px solid black;
+     */
+}
+.socialMedLogSing{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width:1250px) { 
+    *{
+        font-size:12px;
+    }
+}
+
+@media (max-width:990px) { 
+    #logo_img_txt{
+        content: url("../assets/LogoTrentiImgOnly.png");    
+    }
+}

@@ -1,9 +1,9 @@
-*{
+/* *{
     box-sizing:border-box;
     margin:0;
     border:0;
     font-size:14px;
-}
+} */
 
 body{
     /* background: url('../assets/ManchesterSalford1.jpg');
@@ -15,7 +15,7 @@ header{
     background:linear-gradient(150deg, rgba(0, 0, 0, 1) 15%, rgba(57, 104, 70, 1) 42%, rgba(83, 118, 64, 1) 68%, #7b9c33 100%);
     
     height:25vh;
-    width:100vw;
+    width:100%;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
