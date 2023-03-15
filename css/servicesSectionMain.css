@@ -1,8 +1,8 @@
 .services_section{
-    width:100vw;
+    width:100%;
     height:100vh;
-    background: url(../assets/ManchesterSalford_opacitiy50per.png) repeat;
-    /* background: url(../assets/ManchesterSalford2_Opacity50per-min.png) no-repeat; */
+    /* background: url(../assets/ManchesterSalford_opacitiy50per.png) repeat; */
+    background: url(../assets/ManchesterSalford2_Opacity50per-min.png) no-repeat;
     display: flex;
     justify-content: center;
     align-items: center;
