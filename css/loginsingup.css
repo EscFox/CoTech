@@ -49,7 +49,7 @@ button:hover {
 }
 
 .cancelbtn {
-    background-color: #f44336;
+    background-color: var(--bl_color);
 }
 
 #loginSignUpForm>h2{
