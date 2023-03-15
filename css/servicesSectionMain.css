@@ -75,13 +75,17 @@
 }
 
 @media all and (max-width:800px){
-    .services>div{
+    /* .services>div{
         width:90vw;
         height:20%;
-    }
+    } */
     .services>img{
-        display: block;
+        /* display: block; */
         
+    }
+    .services>div{
+        width:100vw;
+        margin:0;
     }
     .services>div>img{
         /* display: none; */
