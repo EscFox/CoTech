@@ -1,8 +1,8 @@
 .services_section{
     width:100vw;
     height:100vh;
-    /* background: url(../assets/ManchesterSalford_opacitiy50per.png) no-repeat; */
-    background: url(../assets/ManchesterSalford2_Opacity50per-min.png) no-repeat;
+    background: url(../assets/ManchesterSalford_opacitiy50per.png) repeat;
+    /* background: url(../assets/ManchesterSalford2_Opacity50per-min.png) no-repeat; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,3 +92,4 @@
         padding-bottom:20px;
     }
 }
+
